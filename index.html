@@ -16,7 +16,7 @@
         <!--while using Sticky must need to set top-0 -->
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="show-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -34,6 +34,22 @@
             </li>
         </ul>
     </nav>
+
+    <!--Side Nav bar for mobile-->
+    <div>
+        <ul id="mobile-nav-bar" class="flex flex-col bg-green-100 gap-10 text-gray-500 fixed z-20 p-2" style="width: 45%; height: 100%; top: 0; margin: 0; right: -50%;">
+            <p id="close-icon" style="cursor: pointer; margin-left: 90%; padding: 10px; font-size: large; color: black;">X</p>
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./productsTailwind.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
 
     <!--Header section-->
     <section class="p-4 bg-green-100 md:p-10 flex justify-center"> <!--WHILE USING FLEX ADD ALL ITEMS INSIDE THE DIV ELEMENT-->
@@ -186,6 +202,9 @@
 
 
     </section>
+
+    <!--Adding Javascript file below-->
+    <script src="./index.js"></script>
 </body>
 
 </html>

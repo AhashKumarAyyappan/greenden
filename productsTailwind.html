@@ -16,7 +16,7 @@
         <!--while using Sticky must need to set top-0 -->
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="show-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -32,17 +32,30 @@
         </ul>
     </nav>
 
+     <!--Side Nav bar for mobile-->
+     <div>
+        <ul id="mobile-nav-bar" class="flex flex-col bg-green-100 gap-10 text-gray-500 fixed z-20 p-2" style="width: 45%; height: 100%; top: 0; margin: 0; right: -50%;">
+            <p id="close-icon" style="cursor: pointer; margin-left: 90%; padding: 10px; font-size: large; color: black;">X</p>
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
     <!--Product list-->
 
     <section class="text-center mt-3">
         <h2 class="text-3xl font-bold">Our Products</h2>
-        <input type="text" placeholder="Search for a product..." class="p-3 mt-2"
+        <input id="search-bar" type="text" placeholder="Search for a product..." class="p-3 mt-2"
             style="width: 60%; border: solid black 1px; border-radius: 10px; ">
     </section>
     <br>
     <!--Product display using image-->
     <section>
-        <div class="p-4 text-center grid grid-cols-2 md:grid-cols-4 gap-5">
+        <div id="product-list" class="p-4 text-center grid grid-cols-2 md:grid-cols-4 gap-5">
             <div>
                 <img src="./images/rose_pot.jpg" alt="rose_pot.jpg"
                     class="inline hover:transform hover:-translate-y-2 hover:shadow-2xl">
@@ -52,43 +65,43 @@
             <div>
                 <img src="./images/rose_pot2.jpg" alt="rose_pot.jpg"
                     class="inline hover:transform hover:-translate-y-2 hover:shadow-2xl">
-                <h3>Rose Plant</h3>
+                <h3>Lotus</h3>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/rose_pot3.jpg" alt="rose_pot.jpg"
                     class="inline hover:transform hover:-translate-y-2 hover:shadow-2xl">
-                <h3>Rose Plant</h3>
+                <h3>Lilly Plant</h3>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/rose_pot4.jpg" alt="rose_pot.jpg"
                     class="inline hover:transform hover:-translate-y-2 hover:shadow-2xl">
-                <h3>Rose Plant</h3>
+                <h3>Love Plant</h3>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/rose_pot4.jpg" alt="rose_pot.jpg"
                     class="inline hover:transform hover:-translate-y-2 hover:shadow-2xl">
-                <h3>Rose Plant</h3>
+                <h3>Lemon</h3>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/rose_pot3.jpg" alt="rose_pot.jpg"
                     class="inline hover:transform hover:-translate-y-2 hover:shadow-2xl">
-                <h3>Rose Plant</h3>
+                <h3>Coconut</h3>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/rose_pot2.jpg" alt="rose_pot.jpg"
                     class="inline hover:transform hover:-translate-y-2 hover:shadow-2xl">
-                <h3>Rose Plant</h3>
+                <h3>Sunflower</h3>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/rose_pot.jpg" alt="rose_pot.jpg"
                     class="inline hover:transform hover:-translate-y-2 hover:shadow-2xl">
-                <h3>Rose Plant</h3>
+                <h3>GroudNut</h3>
                 <p>$20</p>
             </div>
         </div>
@@ -105,6 +118,7 @@
             <p>@2024 <a href="https://github.com/AhashKumarAyyappan/Udemy-project/settings/pages" class="hover:underline">greenden.com</a></p>
         </div>
     </section>
+    <script src="./productList.js"></script>
 </body>
 
 </html>
